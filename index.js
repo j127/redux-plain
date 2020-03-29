@@ -30,7 +30,7 @@ const catReducer = (state = INITIAL_STATE, action) => {
         case CAT_ACTION_TYPES.REMOVE_CAT:
             return {
                 ...state,
-                cats: [...cats].filter(cat => cat.id !== action.payload),
+                cats: cats.filter(cat => cat.id !== action.payload),
             };
         case CAT_ACTION_TYPES.FEED_CAT:
             return {
