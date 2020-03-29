@@ -39,6 +39,8 @@ const catReducer = (state = INITIAL_STATE, action) => {
                     cat.id === cat.id ? { ...cat, hungry: false } : cat
                 ),
             };
+        default:
+            return state;
     }
 };
 
