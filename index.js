@@ -33,6 +33,9 @@ const catReducer = (state = INITIAL_STATE, action) => {
                 cats: cats.filter(cat => cat.id !== action.payload),
             };
         case CAT_ACTION_TYPES.FEED_CAT:
+            // TODO: IIRC, this should return a new state object, but
+            // does it matter if nested objects are references? This
+            // could only search up to the `cat.id` that needs changing.
             return {
                 ...state,
                 cats: cats.map(cat =>
