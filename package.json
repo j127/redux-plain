@@ -9,6 +9,7 @@
     "author": "J. Cohen <hostelmarketing@gmail.com> (https://github.com/j127)",
     "license": "BSD-3-Clause",
     "dependencies": {
-        "redux": "^4.0.5"
+        "redux": "^4.0.5",
+        "redux-logger": "^3.0.6"
     }
 }
